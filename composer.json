@@ -1,0 +1,29 @@
+{
+    "name": "inxy-payments/signature-sdk-php",
+    "description": "Signature SDK",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "apvalkov",
+            "email": "a.valkov@inxy.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "INXY\\Payments\\Signature\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "INXY\\Payments\\Signature\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.1"
+    }
+}
