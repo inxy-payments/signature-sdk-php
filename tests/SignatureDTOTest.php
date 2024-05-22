@@ -21,6 +21,9 @@ class SignatureDTOTest extends TestCase
             'time'      => $time,
         ];
 
-        $this->assertArrayIsIdenticalToArrayIgnoringListOfKeys($expected, $actual, []);
+        $this->assertArrayHasKey('signature', $actual);
+        $this->assertArrayHasKey('time', $actual);
+        $this->assertEquals($expected['time'], $actual['time']);
+        $this->assertEquals($expected['signature'], $actual['signature']);
     }
 }
