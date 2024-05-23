@@ -1,4 +1,4 @@
-# inxy-payments/signature-sdk-php Documentation
+# Documentation
 
 ## Introduction
 
